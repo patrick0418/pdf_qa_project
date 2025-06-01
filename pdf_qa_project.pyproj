@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ba695aca-aa9c-4e40-b6f0-52658aa41e84</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>pdf_qa_project.py</StartupFile>
+    <StartupFile>app\ingest.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,12 +21,17 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="app\ingest.py" />
     <Compile Include="pdf_qa_project.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
     <Folder Include="data\" />
     <Folder Include="vector_store\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\DELTA_IA_AM_OM_TC_20240415.pdf" />
+    <Content Include="data\sample.pdf" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
